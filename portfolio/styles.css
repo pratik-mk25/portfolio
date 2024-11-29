@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Button Hover Effects */
+.btn:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Project Card Hover Effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Navbar Link Hover Effects */
+.nav-link:hover {
+    text-decoration: underline;
+    color: #ffbb33 !important; /* You can choose your preferred color */
+}
+
+/* On mobile screens (max-width 576px) */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5rem; /* Adjust the logo size */
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 1rem; /* Reduce card body padding */
+    }
+
+    .fa-3x {
+        font-size: 2rem; /* Resize icons on mobile */
+    }
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Ensure the home section text is properly centered */
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack projects vertically on tablets and below */
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}
